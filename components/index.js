@@ -8,6 +8,10 @@ import HomeFooter from "./home/footer/Footer";
 import DeskDirector from "./desk/DeskDirector";
 import DeskDean from "./desk/DeskDean";
 import EventCard from "./events/EventCard";
+import Givingback from "./givingback/Contribute";
+import FeaturedAlumni from "./awards/FeaturedAlumn";
+import AlumnAward from "./awards/AlumnAward";
+import BestGirl from "./awards/BestGirl";
 export {
     ScreenHeaderBtn,
     ScreenHeaderTitle,
@@ -19,4 +23,8 @@ export {
     DeskDirector,
     DeskDean,
     EventCard,
+    Givingback,
+    AlumnAward,
+    FeaturedAlumni,
+    BestGirl,
 }

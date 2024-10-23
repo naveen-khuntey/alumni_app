@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-
+import { Givingback } from '../components';
 export default function GivingScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>giving back</Text>
+      <Givingback />
     </View>
   );
 }

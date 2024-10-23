@@ -38,7 +38,7 @@ const index = () => {
             style={{
                 flex : 1,
                 // paddingHorizontal : SIZES.medium,
-                padding : SIZES.medium,
+                // padding : SIZES.medium,
             }}
           >
             <HomeFooter />

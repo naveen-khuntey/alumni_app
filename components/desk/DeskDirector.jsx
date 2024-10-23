@@ -59,7 +59,7 @@ const DeskCard = () => {
         </Text>
       </View>
     </View>
-    <View>
+    <View style={{flex:1}}>
       <HomeFooter />
     </View>
     </ScrollView>

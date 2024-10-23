@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, Text, ScrollView } from 'react-native';
+import { SafeAreaView, StyleSheet, View, Text, ScrollView, Image } from 'react-native';
 import { EventCard, HomeFooter } from '../components'; // Import the EventCard component
 import { COLORS } from '../constants';
 
@@ -39,11 +39,18 @@ const EventList = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       {/* Sticky Header */}
-      <View style={styles.header}>
+      {/* <View style={styles.header}>
         <Text style={styles.headerText}>Events</Text>
-      </View>
+      </View> */}
 
       <ScrollView showsVerticalScrollIndicator={false}>
+      <View style={styles.header1}>
+          <Image
+            source={require('../assets/images/goldenjublebg.jpg')} 
+            style={styles.headerBackground}
+          />
+          <Text style={styles.headerText1}>EVENTS</Text>
+        </View>
         <View style={styles.container}>
           {events.map((event) => (
             <EventCard key={event.id} event={event} />
@@ -68,14 +75,35 @@ const styles = StyleSheet.create({
     top: 0,
     zIndex: 10,
   },
+  header1: {
+    position: 'relative',
+    width: '100%',
+    height: 120,
+  },
+  headerBackground: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'cover', // Background image covers the header
+  },
   headerText: {
     color: '#fff',
     fontSize: 20,
     fontWeight: 'bold',
   },
+  headerText1: {
+    position: 'absolute',
+    top: 40,
+    left: 0,
+    right: 0,
+    textAlign: 'center',
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#fff', // White text for visibility
+    zIndex: 10, // Ensure text is on top of the background image
+  },
   container: {
     flex: 1,
-    marginTop: 70, // Adjust to make space for the header
+    marginTop: 20, // Adjust to make space for the header
     backgroundColor: '#f9f9f9',
   },
 });

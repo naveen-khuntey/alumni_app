@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     flex: 1,
-    paddingHorizontal: 20,
+    // paddingHorizontal: 20,
   },
 });
 
